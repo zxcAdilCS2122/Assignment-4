@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto+Serif:ital,wght@1,500&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+          <span class="sr-only">Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index_3.html">Heroes</a></li>
+          <li><a href="index_8.html">Sign up</a></li>
+          <li><a href="index_4.html">Gallery</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://store.steampowered.com/app/570/Dota_2/?l=russian">Steam</a></li>
+                <li class="divider"></li>
+              <li><a href="https://www.youtube.com/user/dota2/featured">YouTube</a></li>
+              <li class="divider"></li>
+              <li><a href="https://www.twitch.tv/esl_dota2">Twitch</a></li>
+                <li class="divider"></li>
+              <li><a href="https://dota2.ru/forum/">Forum</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" onkeypress="myFunction()" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Send</button>
+
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <h1>DOTA 2</h1>
+  <h2>This is my first website</h2>
+  <button>Click</button>
+  <script type ="text/javascript">
+  $("button").click(function() {
+            $("h2").hide();
+        });
+        </script>
+  <hr>
+  <div class="row">
+    <div class="col-lg-6">
+
+      <p><strong>This site will introduce you to the game of Dota 2</strong></p>
+      <p>Dota 2 is a computer multiplayer team game in the genre of multiplayer online battle arena, developed by Valve </p>
+      <hr style="border-style:none; background-color:tomato;height:2px">
+      <p><em>In this game, heroes are divided into <strong>three</strong> types:</em></p>
+
+      <ul>
+        <li>Strength</a></li> <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Strength_attribute_symbol.png/revision/latest/scale-to-width-down/45?cb=20180323111829" alt="" onmouseover="alert('Power!')">
+        <li>Dexterity</li> <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2d/Agility_attribute_symbol.png/revision/latest/scale-to-width-down/45?cb=20180323111717" alt="" onmouseover="alert('Agility!')">
+        <li>Intelligence</li> <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Intelligence_attribute_symbol.png/revision/latest/scale-to-width-down/45?cb=20180323111753" alt=""onmouseover="alert('Mentality!')">
+
+      </ul>
+
+      <hr style="border-style:none; background-color:tomato;height:2px">
+      <h3>Basic information about this game:</h3>
+      <ul type="square">
+        <li>The game was announced on October 13, 2010.</li>
+        <li>There are currently 121 playable heroes in the game.</li>
+        <li>On average, more than 412 thousand people play Dota a day</li>
+
+      </ul>
+      <p>More information you can find <a href="https://ru.wikipedia.org/wiki/DotA">here</a></p>
+
+
+
+    </div>
+  </div>
+  <big>Until the release of the new patch 7.31:</big>
+  <p id="demo"></p>
+
+  <script>
+
+  var countDownDate = new Date("Feb 23, 2022 12:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+
+
+    var dist = countDownDate - now;
+
+
+    var days = Math.floor(dist / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((dist % (1000 * 60)) / 1000);
+
+
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+
+    if (dist < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Expired";
+    }
+  }, 1000);
+  </script>
+
+
+  <script>
+function myFunction() {
+  alert("You pressed a key inside the field");
+}
+</script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

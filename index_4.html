@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto+Serif:ital,wght@1,500&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+
+
+
+  </div>
+  </div>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+          <span class="sr-only">Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index_3.html">Heroes</a></li>
+          <li><a href="index_8.html">Sign up</a></li>
+          <li><a href="index_4.html">Gallery</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://store.steampowered.com/app/570/Dota_2/?l=russian">Steam</a></li>
+                <li class="divider"></li>
+              <li><a href="https://www.youtube.com/user/dota2/featured">YouTube</a></li>
+              <li class="divider"></li>
+              <li><a href="https://www.twitch.tv/esl_dota2">Twitch</a></li>
+                <li class="divider"></li>
+              <li><a href="https://dota2.ru/forum/">Forum</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" onkeypress="myFunction()" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Send</button>
+
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <h1>Game Gallery</h1>
+  <big>On this page you can see pictures of the game</big>
+  <hr>
+
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+
+      <div class="slide first">
+        <img src="1.jpeg" alt="">
+      </div>
+      <div class="slide second">
+        <img src="2.jpeg" alt="">
+      </div>
+      <div class="slide third">
+        <img src="3.jpeg" alt="">
+      </div>
+      <div class="slide fourth">
+        <img src="4.jpeg" alt="">
+      </div>
+      <div class="slide fifth">
+        <img src="5.png" alt="">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+      </div>
+    </div>
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+  </div>
+
+
+
+  <script>
+    function myFunction() {
+      alert("You pressed a key inside the input field");
+    }
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function() {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 5) {
+        counter = 1;
+      }
+    }, 6000);
+  </script>
+</body>
+
+</html>
